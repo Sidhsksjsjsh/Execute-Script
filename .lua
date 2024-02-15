@@ -21,6 +21,8 @@ elseif game.PlaceId == 14897405913 then -- lumberjack simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Lumberjack-Simulator/main/.lua"))()
 elseif game.PlaceId == 8880590553 then -- Animal Evolution Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Animal-Evolution-Simulator/main/.lua"))()
-elseif game.PlaceId == 14841485778 then
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Possessor/main/.lua"))()
+elseif game.PlaceId == 14841485778 then -- possessor
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Possessor/main/.lua"))()
+else
+  setclipboard(game.PlaceId)
 end
