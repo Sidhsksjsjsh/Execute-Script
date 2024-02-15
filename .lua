@@ -5,7 +5,6 @@ https://www.roblox.com/games/12135640403/SOLO-LEVELING-Anime-Dungeon-Fighters?ga
 https://www.roblox.com/games/15300789066/Shoot-Beam-Simulator?gameSetTypeId=100000003&homePageSessionInfo=1ba2bc90-a50a-4bb1-8b53-63b09de00389&isAd=false&numberOfLoadedTiles=50&page=sortDetailPageHome&placeId=15300789066&position=27&universeId=5277069600
 https://www.roblox.com/games/14897405913/DUNIA-5-Simulator-Lumberjack?gameSetTypeId=100000003&homePageSessionInfo=1ba2bc90-a50a-4bb1-8b53-63b09de00389&isAd=false&numberOfLoadedTiles=50&page=sortDetailPageHome&placeId=14897405913&position=25&universeId=5132598287
 https://www.roblox.com/games/8880590553/Simulator-Evolusi-Hewan?gameSetTypeId=100000003&homePageSessionInfo=1ba2bc90-a50a-4bb1-8b53-63b09de00389&isAd=false&numberOfLoadedTiles=50&page=sortDetailPageHome&placeId=8880590553&position=3&universeId=3358419523
-https://raw.githubusercontent.com/Sidhsksjsjsh/Possessor/main/.lua
 https://www.roblox.com/games/14841485778/Possessor?gameSetTypeId=100000003&homePageSessionInfo=adeab86f-ae3c-40bc-8414-dc3b949b6dab&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=14841485778&position=0&sortPos=0&universeId=5114123816
 ]]
 
