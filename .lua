@@ -9,7 +9,7 @@ https://www.roblox.com/games/14841485778/Possessor?gameSetTypeId=100000003&homeP
 ]]
 
 if game.PlaceId == 13885546444 then -- mowing simulator
-  loadstring(game:HttpGet(""))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Mowing-Simulator/main/.lua"))()
 elseif game.PlaceId == 14822302723 then -- gun ball
   loadstring(game:HttpGet(""))()
 elseif game.PlaceId == 12135640403 or game.PlaceId == 15502802094 then -- Anime Dungeon Fighters world 1 & 2
