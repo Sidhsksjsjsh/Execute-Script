@@ -6,12 +6,13 @@ https://www.roblox.com/games/15300789066/Shoot-Beam-Simulator?gameSetTypeId=1000
 https://www.roblox.com/games/14897405913/DUNIA-5-Simulator-Lumberjack?gameSetTypeId=100000003&homePageSessionInfo=1ba2bc90-a50a-4bb1-8b53-63b09de00389&isAd=false&numberOfLoadedTiles=50&page=sortDetailPageHome&placeId=14897405913&position=25&universeId=5132598287
 https://www.roblox.com/games/8880590553/Simulator-Evolusi-Hewan?gameSetTypeId=100000003&homePageSessionInfo=1ba2bc90-a50a-4bb1-8b53-63b09de00389&isAd=false&numberOfLoadedTiles=50&page=sortDetailPageHome&placeId=8880590553&position=3&universeId=3358419523
 https://www.roblox.com/games/14841485778/Possessor?gameSetTypeId=100000003&homePageSessionInfo=adeab86f-ae3c-40bc-8414-dc3b949b6dab&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=14841485778&position=0&sortPos=0&universeId=5114123816
+https://www.roblox.com/games/15935482021/UPD7-Simulator-Infinity-Anime-Gratis?gameSetTypeId=100000003&homePageSessionInfo=bb1bc90e-af73-42cb-900f-2373b367a391&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15935482021&position=0&sortPos=0&universeId=5510084750
 ]]
 
 if game.PlaceId == 13885546444 then -- mowing simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Mowing-Simulator/main/.lua"))()
 elseif game.PlaceId == 14822302723 then -- gun ball
-  loadstring(game:HttpGet(""))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Gun-Ball/main/.lua"))()
 elseif game.PlaceId == 12135640403 or game.PlaceId == 15502802094 then -- Anime Dungeon Fighters world 1 & 2
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Anime-Dungeon-Fighters/main/.lua"))()
 elseif game.PlaceId == 15300789066 then -- shoot beam simulator
@@ -21,7 +22,9 @@ elseif game.PlaceId == 14897405913 then -- lumberjack simulator
 elseif game.PlaceId == 8880590553 then -- Animal Evolution Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Animal-Evolution-Simulator/main/.lua"))()
 elseif game.PlaceId == 14841485778 then -- possessor
-  loadstring(game:HttpGet(""))()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Possessor/main/.lua"))()
+elseif game.PlaceId == 15935482021 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Anime-Infinity/main/.lua"))()
 else
   setclipboard(game.PlaceId)
 end
