@@ -24,10 +24,12 @@ elseif game.PlaceId == 8880590553 then -- Animal Evolution Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Animal-Evolution-Simulator/main/.lua"))()
 elseif game.PlaceId == 14841485778 then -- possessor
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Possessor/main/.lua"))()
-elseif game.PlaceId == 15935482021 then
+elseif game.PlaceId == 15935482021 then -- Anime Infinity Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Anime-Infinity/main/.lua"))()
-elseif game.PlaceId == 1240123653 then
+elseif game.PlaceId == 1240123653 then -- Zombie Attack
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Zombie-Attack/main/.lua"))()
+elseif game.PlaceId == 14834754084 then -- Special Forces Simulator (PVP Mode)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Special-Forces-Simulator/main/.lua"))()
 else
   setclipboard(game.PlaceId)
 end
