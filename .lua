@@ -8,6 +8,7 @@ https://www.roblox.com/games/8880590553/Simulator-Evolusi-Hewan?gameSetTypeId=10
 https://www.roblox.com/games/14841485778/Possessor?gameSetTypeId=100000003&homePageSessionInfo=adeab86f-ae3c-40bc-8414-dc3b949b6dab&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=14841485778&position=0&sortPos=0&universeId=5114123816
 https://www.roblox.com/games/15935482021/UPD7-Simulator-Infinity-Anime-Gratis?gameSetTypeId=100000003&homePageSessionInfo=bb1bc90e-af73-42cb-900f-2373b367a391&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15935482021&position=0&sortPos=0&universeId=5510084750
 https://www.roblox.com/games/1240123653/Zombie-Serangan?gameSearchSessionInfo=18b9355b-0fbd-42f0-bf04-8d8c638e9e9d&isAd=false&nativeAdData=&numberOfLoadedTiles=40&page=searchPage&placeId=1240123653&position=0&universeId=504035427
+https://www.roblox.com/games/4972091010/BARU-Pemberontakan-Zombie?gameSearchSessionInfo=bd8ab1bd-27a2-4f0e-847d-f622377e345b&isAd=false&nativeAdData=&numberOfLoadedTiles=40&page=searchPage&placeId=4972091010&position=0&universeId=1709832923
 ]]
 
 if game.PlaceId == 13885546444 then -- mowing simulator
@@ -30,6 +31,8 @@ elseif game.PlaceId == 1240123653 then -- Zombie Attack
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Zombie-Attack/main/.lua"))()
 elseif game.PlaceId == 14834754084 then -- Special Forces Simulator (PVP Mode)
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Special-Forces-Simulator/main/.lua"))()
+elseif game.PlaceId == 4972091010 then -- Zombie Uprising
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/TurtleHub/main/Zombie-Uprising/Script.lua"))()
 else
   setclipboard(game.PlaceId)
 end
