@@ -9,6 +9,7 @@ https://www.roblox.com/games/14841485778/Possessor?gameSetTypeId=100000003&homeP
 https://www.roblox.com/games/15935482021/UPD7-Simulator-Infinity-Anime-Gratis?gameSetTypeId=100000003&homePageSessionInfo=bb1bc90e-af73-42cb-900f-2373b367a391&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15935482021&position=0&sortPos=0&universeId=5510084750
 https://www.roblox.com/games/1240123653/Zombie-Serangan?gameSearchSessionInfo=18b9355b-0fbd-42f0-bf04-8d8c638e9e9d&isAd=false&nativeAdData=&numberOfLoadedTiles=40&page=searchPage&placeId=1240123653&position=0&universeId=504035427
 https://www.roblox.com/games/4972091010/BARU-Pemberontakan-Zombie?gameSearchSessionInfo=bd8ab1bd-27a2-4f0e-847d-f622377e345b&isAd=false&nativeAdData=&numberOfLoadedTiles=40&page=searchPage&placeId=4972091010&position=0&universeId=1709832923
+https://www.roblox.com/games/12152063271/BARU-Simulator-Pukulan-Bola-Api?gameSetTypeId=100000003&homePageSessionInfo=a6316aa5-e207-4259-b1a8-ccc66946259d&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=12152063271&position=0&sortPos=0&universeId=4285834347
 ]]
 
 if game.PlaceId == 13885546444 then -- mowing simulator
@@ -33,6 +34,8 @@ elseif game.PlaceId == 14834754084 then -- Special Forces Simulator (PVP Mode)
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Special-Forces-Simulator/main/.lua"))()
 elseif game.PlaceId == 4972091010 then -- Zombie Uprising
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/TurtleHub/main/Zombie-Uprising/Script.lua"))()
+elseif game.PlaceId == 12152063271 then -- fire ball punch
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/FireballPunchSimulator/main/.lua"))()
 else
   setclipboard(game.PlaceId)
 end
