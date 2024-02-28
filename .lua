@@ -37,5 +37,6 @@ elseif game.PlaceId == 4972091010 then -- Zombie Uprising
 elseif game.PlaceId == 12152063271 then -- fire ball punch
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/FireballPunchSimulator/main/.lua"))()
 else
-  setclipboard(game.PlaceId)
+  local hin = Instance.new("Hint",game:GetService("Workspace"))
+  hin.Text = "Unsupported games"
 end
