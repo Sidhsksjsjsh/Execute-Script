@@ -13,6 +13,22 @@ https://www.roblox.com/games/12152063271/BARU-Simulator-Pukulan-Bola-Api?gameSet
 https://www.roblox.com/games/14168050172/Simulator-Gauntlet?gameSetTypeId=100000003&homePageSessionInfo=7d1834d6-9512-4dbc-ad60-c6386c262834&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=14168050172&position=0&sortPos=0&universeId=4903983422
 ]]
 
+local function antispy()
+for i, v in next,expfunctions do
+    local old = hookfunction(v,newcclosure(function(...)
+                local args = {...}
+                for i,v in next,args do
+                    if tostring(i):find("https") or tostring(v):find("https") then
+                        SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
+			              else
+			                  SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
+                    end
+                end
+                return old(...)
+            end))
+end
+end
+
 if game.PlaceId == 13885546444 then -- mowing simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Mowing-Simulator/main/.lua"))()
 elseif game.PlaceId == 14822302723 then -- gun ball
