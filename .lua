@@ -50,18 +50,22 @@ local function SendMessage(url,message)
     })
     print("Sent")
 end
---https://raw.githubusercontent.com/
+
+local varlog = ""
 local function antispy()
 for ind,var in next,expfunctions do
     local old = hookfunction(var,newcclosure(function(...)
                 local args = {...}
                 for i,v in next,args do
                     if tostring(i):find("https") or tostring(v):find("https") then
-                        SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard HTTPS Protection\n```\n" .. i .. ". " .. v .. "\n```")
+			varlog = varlog .. "\n" .. i .. ". " .. v
+                        SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard HTTPS Protection\n```\n" .. varlog .. "\n```")
 		    elseif tostring(i):find("Kick") or tostring(v):find("Kick") or getnamecallmethod() == "Kick" then
-			SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard Kick Detection\n```\nSuccessfully bypassed kick method! ( Server-side & Client-side ) \n```")
+			varlog = varlog .. "\nSuccessfully bypassed kick method! ( Server-side & Client-side )"
+			SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard Kick Detection\n```\n" .. varlog .. "\n```")
 		    else
-		        SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard Client Detection\n```\n" .. i .. ". " .. v .. "\n```")
+			varlog = varlog .. "\n" .. i .. ". " .. v
+		        SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard Client Detection\n```\n" .. varlog .. "\n```")
 			task.spawn(function()
 				local msg = Instance.new("Message",workspace)
 				msg.Text = "Text: " .. v .. " (" .. i .. ")\nMethod: null"
