@@ -62,6 +62,8 @@ for ind,var in next,expfunctions do
 			task.spawn(function()
 				local msg = Instance.new("Message",workspace)
 				msg.Text = "Text: " .. v .. " (" .. i .. ")\nMethod: " .. tostring(getnamecallmethod() or "null")
+				wait(5)
+				msg:Destroy()
 			end)
                     end
                 end
