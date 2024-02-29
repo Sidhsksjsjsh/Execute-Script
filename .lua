@@ -11,6 +11,7 @@ https://www.roblox.com/games/1240123653/Zombie-Serangan?gameSearchSessionInfo=18
 https://www.roblox.com/games/4972091010/BARU-Pemberontakan-Zombie?gameSearchSessionInfo=bd8ab1bd-27a2-4f0e-847d-f622377e345b&isAd=false&nativeAdData=&numberOfLoadedTiles=40&page=searchPage&placeId=4972091010&position=0&universeId=1709832923
 https://www.roblox.com/games/12152063271/BARU-Simulator-Pukulan-Bola-Api?gameSetTypeId=100000003&homePageSessionInfo=a6316aa5-e207-4259-b1a8-ccc66946259d&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=12152063271&position=0&sortPos=0&universeId=4285834347
 https://www.roblox.com/games/14168050172/Simulator-Gauntlet?gameSetTypeId=100000003&homePageSessionInfo=7d1834d6-9512-4dbc-ad60-c6386c262834&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=14168050172&position=0&sortPos=0&universeId=4903983422
+https://www.roblox.com/games/15840422464/Simulator-StarRail-RELEASE?gameSetTypeId=100000003&homePageSessionInfo=a6ad7b5a-36ad-4c2b-a2ca-9525068934d0&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15840422464&position=0&sortPos=0&universeId=5477548919
 ]]
 
 local http = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
@@ -103,11 +104,15 @@ elseif game.PlaceId == 4972091010 then -- Zombie Uprising
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/TurtleHub/main/Zombie-Uprising/Script.lua"))()
 elseif game.PlaceId == 12152063271 then -- fire ball punch
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/FireballPunchSimulator/main/.lua"))()
-elseif game.PlaceId == 14168050172 then
+elseif game.PlaceId == 14168050172 then -- Gauntlet Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Gauntlet-Simulator/main/.lua"))()
+elseif game.PlaceId == 15840422464 then -- StarRail Simulator
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/StarRail-Simulator/main/.lua"))()
 else
   local hin = Instance.new("Hint",game:GetService("Workspace"))
   hin.Text = "Unsupported games"
 end
 wait(0.5)
-antispy()
+if user.Name ~= "Rivanda_Cheater" then
+	antispy()
+end
