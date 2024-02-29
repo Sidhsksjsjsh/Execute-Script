@@ -28,10 +28,10 @@ local expfunctions = {
     isfile,
     readfile,
     game.HttpGet,
-    user.Kick,
-    getnamecallmethod,
-    getrawmetatable,
-    setreadonly
+    user.Kick
+    --getnamecallmethod,
+    --getrawmetatable,
+    --setreadonly
 }
 
 local function SendMessage(url,message)
