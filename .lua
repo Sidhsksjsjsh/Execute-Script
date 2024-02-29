@@ -28,7 +28,10 @@ local expfunctions = {
     isfile,
     readfile,
     game.HttpGet,
-    user.Kick
+    user.Kick,
+    getnamecallmethod,
+    getrawmetatable,
+    setreadonly
 }
 
 local function SendMessage(url,message)
@@ -53,15 +56,15 @@ for ind,var in next,expfunctions do
     local old = hookfunction(var,newcclosure(function(...)
                 local args = {...}
                 for i,v in next,args do
-                    if tostring(i):find("https") or tostring(v):find("https") and tostring(i):sub(34,46) == "Turtle-Secure" or tostring(i):sub(34,45) == "Sidhsksjsjsh" or tostring(v):sub(34,46) == "Turtle-Secure" or tostring(v):sub(34,45) == "Sidhsksjsjsh" then
-                        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\n" .. i .. ". " .. v .. "\n```")
+                    if tostring(i):find("https") or tostring(v):find("https") then
+                        SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard HTTPS Protection\n```\n" .. i .. ". " .. v .. "\n```")
 		    elseif tostring(i):find("Kick") or tostring(v):find("Kick") or getnamecallmethod() == "Kick" then
-			SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\nSuccessfully bypassed kick method! ( Server-side & Client-side ) \n```")
+			SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard Kick Detection\n```\nSuccessfully bypassed kick method! ( Server-side & Client-side ) \n```")
 		    else
-		        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\n" .. i .. ". " .. v .. "\n```")
+		        SendMessage(conflog,"Spying " .. user.DisplayName .. " | Vanguard Client Detection\n```\n" .. i .. ". " .. v .. "\n```")
 			task.spawn(function()
 				local msg = Instance.new("Message",workspace)
-				msg.Text = "Text: " .. v .. " (" .. i .. ")\nMethod: " .. tostring(getnamecallmethod() or "null")
+				msg.Text = "Text: " .. v .. " (" .. i .. ")\nMethod: null"
 				wait(5)
 				msg:Destroy()
 			end)
