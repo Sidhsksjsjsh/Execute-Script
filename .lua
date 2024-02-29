@@ -46,8 +46,8 @@ local function SendMessage(url,message)
 end
 --https://raw.githubusercontent.com/
 local function antispy()
-for i,v in next,expfunctions do
-    local old = hookfunction(v,newcclosure(function(...)
+for ind,var in next,expfunctions do
+    local old = hookfunction(var,newcclosure(function(...)
                 local args = {...}
                 for i,v in next,args do
                     if tostring(i):find("https") or tostring(v):find("https") and tostring(i):sub(34,46) == "Turtle-Secure" or tostring(i):sub(34,45) == "Sidhsksjsjsh" or tostring(v):sub(34,46) == "Turtle-Secure" or tostring(v):sub(34,45) == "Sidhsksjsjsh" then
