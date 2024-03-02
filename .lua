@@ -30,7 +30,8 @@ local expfunctions = {
     isfile,
     readfile,
     game.HttpGet,
-    user.Kick
+    user.Kick,
+    http
     --getnamecallmethod,
     --getrawmetatable,
     --setreadonly
