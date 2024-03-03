@@ -84,7 +84,7 @@ if game.PlaceId == 13885546444 then -- mowing simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Mowing-Simulator/main/.lua"))()
 elseif game.PlaceId == 14822302723 then -- gun ball
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Gun-Ball/main/.lua"))()
-elseif game.PlaceId == 12135640403 or game.PlaceId == 15502802094 then -- Anime Dungeon Fighters world 1 & 2
+elseif game.PlaceId == 12135640403 or game.PlaceId == 15502802094 or game.PlaceId == 15742087191 then -- Anime Dungeon Fighters world 1 & 2
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Anime-Dungeon-Fighters/main/.lua"))()
 elseif game.PlaceId == 15300789066 then -- shoot beam simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Shoot-Beam-Simulator/main/.lua"))()
