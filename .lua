@@ -13,6 +13,7 @@ https://www.roblox.com/games/12152063271/BARU-Simulator-Pukulan-Bola-Api?gameSet
 https://www.roblox.com/games/14168050172/Simulator-Gauntlet?gameSetTypeId=100000003&homePageSessionInfo=7d1834d6-9512-4dbc-ad60-c6386c262834&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=14168050172&position=0&sortPos=0&universeId=4903983422
 https://www.roblox.com/games/15840422464/Simulator-StarRail-RELEASE?gameSetTypeId=100000003&homePageSessionInfo=a6ad7b5a-36ad-4c2b-a2ca-9525068934d0&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15840422464&position=0&sortPos=0&universeId=5477548919
 https://www.roblox.com/games/15445888182/PLAZA-Pet-Adventures-Simulator?gameSetTypeId=100000003&homePageSessionInfo=b16e6fda-ff25-4bc9-9fe7-30c49f961102&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15445888182&position=0&sortPos=0&universeId=5329466173
+https://www.roblox.com/games/16230991879/NEW-Simulator-Pengkodean?gameSetTypeId=100000003&homePageSessionInfo=487e3a71-cb2b-49ab-adc8-93ce96ebda94&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=16230991879&position=1&sortPos=0&universeId=5602610435
 ]]
 
 local http = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
@@ -31,13 +32,7 @@ local expfunctions = {
     readfile,
     game.HttpGet,
     user.Kick,
-    http,
-    hookfunction,
-    newcclosure,
-    Instance.new
-    --getnamecallmethod,
-    --getrawmetatable,
-    --setreadonly
+    http
 }
 
 local function SendMessage(url,message)
@@ -113,8 +108,10 @@ elseif game.PlaceId == 14168050172 then -- Gauntlet Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Gauntlet-Simulator/main/.lua"))()
 elseif game.PlaceId == 15840422464 then -- StarRail Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/StarRail-Simulator/main/.lua"))()
-elseif game.PlaceId == 15445888182 then
+elseif game.PlaceId == 15445888182 then -- Pet Adventures Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Pet-Adventure-Simulator/main/.lua"))()
+elseif game.PlaceId == 16230991879 then -- Coding Simulator
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Soding-Simulator/main/.lua"))()
 else
   local hin = Instance.new("Hint",game:GetService("Workspace"))
   hin.Text = "Unsupported games"
