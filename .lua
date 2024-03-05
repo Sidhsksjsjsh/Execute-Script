@@ -32,7 +32,8 @@ local expfunctions = {
     readfile,
     game.HttpGet,
     user.Kick,
-    http
+    rconsoleprint,
+    setclipboard
 }
 
 local function SendMessage(url,message)
@@ -59,21 +60,13 @@ for ind,var in next,expfunctions do
                 local args = {...}
                 for i,v in next,args do
                     if tostring(i):find("https") or tostring(v):find("https") then
-			varlog = varlog .. "\n" .. i .. ". " .. v
+			varlog = varlog .. "\n" .. i .. ". This http has been blocked by Vanguard"
                         SendMessage(conflog,"Spying " .. user.DisplayName .. " ( " .. user.Name .. " ) ( " .. user.UserId .. " ) | Vanguard HTTPS Protection\n```\n" .. varlog .. "\n```")
+			return "This http has been blocked by Vanguard"
 		    elseif tostring(i):find("Kick") or tostring(v):find("Kick") or getnamecallmethod() == "Kick" then
 			varlog = varlog .. "\nSuccessfully bypassed kick method! ( Server-side & Client-side )"
 			SendMessage(conflog,"Spying " .. user.DisplayName .. " ( " .. user.Name .. " ) ( " .. user.UserId .. " ) | Vanguard Kick Detection\n```\n" .. varlog .. "\n```")
-		    else
-			varlog = varlog .. "\n" .. i .. ". " .. v
-		        SendMessage(conflog,"Spying " .. user.DisplayName .. " ( " .. user.Name .. " ) ( " .. user.UserId .. " ) | Vanguard Client Detection\n```\n" .. varlog .. "\n```")
-			task.spawn(function()
-				local msg = Instance.new("Message",workspace)
-				msg.Text = "Text: " .. v .. " (" .. i .. ")\nMethod: null"
-				wait(5)
-				msg:Destroy()
-			end)
-                    end
+		    end
                 end
                 return old(...)
             end))
