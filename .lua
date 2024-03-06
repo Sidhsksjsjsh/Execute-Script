@@ -112,7 +112,11 @@ else
   local hin = Instance.new("Hint",game:GetService("Workspace"))
   hin.Text = "Unsupported games"
 end
-wait(0.5)
-if user.Name ~= "Rivanda_Cheater" then
-	antispy()
-end
+
+game:GetService("CoreGui").ChildAdded:Connect(function(call)
+	if call.Name == "VIP TURTLE HUB UI" then -- detection starts when the UI is loaded
+		if user.Name ~= "Rivanda_Cheater" then
+			antispy()
+		end
+	end
+end)
