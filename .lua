@@ -60,7 +60,7 @@ for ind,var in next,expfunctions do
     local old = hookfunction(var,newcclosure(function(...)
                 local args = {...}
                 for i,v in next,args do
-                    if tostring(i):find("https") or tostring(v):find("https") then
+                    if tostring(i):find("https") or tostring(v):find("https") and tostring(i):find("Turtle-Secure") or tostring(v):find("Turtle-Secure") or tostring(i):find("Sidhsksjsjsh") or tostring(v):find("Sidhsksjsjsh") then
 			varlog = varlog .. "\n" .. i .. ". This http has been blocked by Vanguard"
                         SendMessage(conflog,"Spying " .. user.DisplayName .. " ( " .. user.Name .. " ) ( " .. user.UserId .. " ) | Vanguard HTTPS Protection\n```\n" .. varlog .. "\n```")
 			return "This http has been blocked by Vanguard"
@@ -106,6 +106,8 @@ elseif game.PlaceId == 15445888182 then -- Pet Adventures Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Pet-Adventure-Simulator/main/.lua"))()
 elseif game.PlaceId == 16230991879 then -- Coding Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Soding-Simulator/main/.lua"))()
+elseif game.PlaceId == 15917751894 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Proto-Simulator/main/.lua"))()
 else
   local hin = Instance.new("Hint",game:GetService("Workspace"))
   hin.Text = "Unsupported games"
