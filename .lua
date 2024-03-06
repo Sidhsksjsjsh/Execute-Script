@@ -14,6 +14,7 @@ https://www.roblox.com/games/14168050172/Simulator-Gauntlet?gameSetTypeId=100000
 https://www.roblox.com/games/15840422464/Simulator-StarRail-RELEASE?gameSetTypeId=100000003&homePageSessionInfo=a6ad7b5a-36ad-4c2b-a2ca-9525068934d0&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15840422464&position=0&sortPos=0&universeId=5477548919
 https://www.roblox.com/games/15445888182/PLAZA-Pet-Adventures-Simulator?gameSetTypeId=100000003&homePageSessionInfo=b16e6fda-ff25-4bc9-9fe7-30c49f961102&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15445888182&position=0&sortPos=0&universeId=5329466173
 https://www.roblox.com/games/16230991879/NEW-Simulator-Pengkodean?gameSetTypeId=100000003&homePageSessionInfo=487e3a71-cb2b-49ab-adc8-93ce96ebda94&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=16230991879&position=1&sortPos=0&universeId=5602610435
+https://www.roblox.com/games/15917751894/Prota-Simulator?gameSetTypeId=100000003&homePageSessionInfo=fe8d5a91-985e-42e9-8a7a-7a13dbc49511&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15917751894&position=0&sortPos=0&universeId=5504032529
 ]]
 
 local http = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
