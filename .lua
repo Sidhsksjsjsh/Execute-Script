@@ -16,6 +16,7 @@ https://www.roblox.com/games/15445888182/PLAZA-Pet-Adventures-Simulator?gameSetT
 https://www.roblox.com/games/16230991879/NEW-Simulator-Pengkodean?gameSetTypeId=100000003&homePageSessionInfo=487e3a71-cb2b-49ab-adc8-93ce96ebda94&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=16230991879&position=1&sortPos=0&universeId=5602610435
 https://www.roblox.com/games/15917751894/Prota-Simulator?gameSetTypeId=100000003&homePageSessionInfo=fe8d5a91-985e-42e9-8a7a-7a13dbc49511&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15917751894&position=0&sortPos=0&universeId=5504032529
 https://www.roblox.com/games/13946745315/Kepala-Bangkit?gameSetTypeId=100000003&homePageSessionInfo=028e81d8-ccbd-46c9-83c0-89093ba2a6ca&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=13946745315&position=0&sortPos=0&universeId=4833468691
+https://www.roblox.com/games/16510724413/Pet-Catchers-RELEASE?gameSetTypeId=100000003&homePageSessionInfo=7bc373ad-5a9d-43fe-87dc-762e3930ecf7&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=16510724413&position=0&sortPos=0&universeId=5686465822
 ]]
 
 local http = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
@@ -111,6 +112,8 @@ elseif game.PlaceId == 15917751894 then -- Prota Simulator
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Proto-Simulator/main/.lua"))()
 elseif game.PlaceId == 13946745315 then -- Heads Up
   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Heads-Up/main/.lua"))()
+elseif game.PlaceId == 16510724413 then -- Pet Catchers
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Pet-Catchers/main/.lua"))()
 else
   local hin = Instance.new("Hint",game:GetService("Workspace"))
   hin.Text = "Unsupported games"
