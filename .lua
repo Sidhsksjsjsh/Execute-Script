@@ -40,6 +40,7 @@ local HttpService = game:GetService("HttpService")
 local conflog = "https://discord.com/api/webhooks/1211484283731181639/rbJUNf5xMNmc2C-UrW8FN8TMSsuunkj1GFq9tqzr3DEpS_2_tNNQXEdhZc4Z1Tos8W2t"
 local user = game:GetService("Players").LocalPlayer
 local workspace = game:GetService("Workspace")
+local LogService = game:GetService("LogService")
 local expfunctions = {
     writefile,
     print,
@@ -148,6 +149,10 @@ end
 wait(0.5)
 if user.Name ~= "Rivanda_Cheater" then
 	antispy()
+end
+
+for i,v in pairs(getconnections(LogService["MessageOut"])) do
+    v:Disconnect()
 end
 
 --[[game:GetService("CoreGui").ChildAdded:Connect(function(call)
