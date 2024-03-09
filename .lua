@@ -19,6 +19,7 @@ https://www.roblox.com/games/13946745315/Kepala-Bangkit?gameSetTypeId=100000003&
 https://www.roblox.com/games/16510724413/Pet-Catchers-RELEASE?gameSetTypeId=100000003&homePageSessionInfo=7bc373ad-5a9d-43fe-87dc-762e3930ecf7&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=16510724413&position=0&sortPos=0&universeId=5686465822
 ]]
 
+local ks = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Key-system/main/.lua"))()
 local http = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
 local HttpService = game:GetService("HttpService")
 local conflog = "https://discord.com/api/webhooks/1211484283731181639/rbJUNf5xMNmc2C-UrW8FN8TMSsuunkj1GFq9tqzr3DEpS_2_tNNQXEdhZc4Z1Tos8W2t"
@@ -76,48 +77,55 @@ for ind,var in next,expfunctions do
 end
 end
 
-if game.PlaceId == 13885546444 then -- mowing simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Mowing-Simulator/main/.lua"))()
-elseif game.PlaceId == 14822302723 then -- gun ball
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Gun-Ball/main/.lua"))()
-elseif game.PlaceId == 12135640403 or game.PlaceId == 15502802094 or game.PlaceId == 15742087191 then -- Anime Dungeon Fighters world 1 & 2
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Anime-Dungeon-Fighters/main/.lua"))()
-elseif game.PlaceId == 15300789066 then -- shoot beam simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Shoot-Beam-Simulator/main/.lua"))()
-elseif game.PlaceId == 14897405913 then -- lumberjack simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Lumberjack-Simulator/main/.lua"))()
-elseif game.PlaceId == 8880590553 then -- Animal Evolution Simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Animal-Evolution-Simulator/main/.lua"))()
-elseif game.PlaceId == 14841485778 then -- possessor
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Possessor/main/.lua"))()
-elseif game.PlaceId == 15935482021 then -- Anime Infinity Simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Anime-Infinity/main/.lua"))()
-elseif game.PlaceId == 1240123653 then -- Zombie Attack
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Zombie-Attack/main/.lua"))()
-elseif game.PlaceId == 14834754084 then -- Special Forces Simulator (PVP Mode)
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Special-Forces-Simulator/main/.lua"))()
-elseif game.PlaceId == 4972091010 then -- Zombie Uprising
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/TurtleHub/main/Zombie-Uprising/Script.lua"))()
-elseif game.PlaceId == 12152063271 then -- fire ball punch
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/FireballPunchSimulator/main/.lua"))()
-elseif game.PlaceId == 14168050172 then -- Gauntlet Simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Gauntlet-Simulator/main/.lua"))()
-elseif game.PlaceId == 15840422464 then -- StarRail Simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/StarRail-Simulator/main/.lua"))()
-elseif game.PlaceId == 15445888182 then -- Pet Adventures Simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Pet-Adventure-Simulator/main/.lua"))()
-elseif game.PlaceId == 16230991879 then -- Coding Simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Soding-Simulator/main/.lua"))()
-elseif game.PlaceId == 15917751894 then -- Prota Simulator
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Proto-Simulator/main/.lua"))()
-elseif game.PlaceId == 13946745315 then -- Heads Up
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Heads-Up/main/.lua"))()
-elseif game.PlaceId == 16510724413 then -- Pet Catchers
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Pet-Catchers/main/.lua"))()
-else
-  local hin = Instance.new("Hint",game:GetService("Workspace"))
-  hin.Text = "Unsupported games"
-end
+ks:CreateUI({
+    Title = "Turtle Hub\nKey System",
+    KeyUrl = "Go find the key on turtle discord server",
+    Key = {"TurtleOnTop","Alya","TurtleHub","BestScript"},
+    Callback = function()
+	if game.PlaceId == 13885546444 then -- mowing simulator
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Mowing-Simulator/main/.lua"))()
+        elseif game.PlaceId == 14822302723 then -- gun ball
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Gun-Ball/main/.lua"))()
+        elseif game.PlaceId == 12135640403 or game.PlaceId == 15502802094 or game.PlaceId == 15742087191 then -- Anime Dungeon Fighters world 1 & 2
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Anime-Dungeon-Fighters/main/.lua"))()
+         elseif game.PlaceId == 15300789066 then -- shoot beam simulator
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Shoot-Beam-Simulator/main/.lua"))()
+         elseif game.PlaceId == 14897405913 then -- lumberjack simulator
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Lumberjack-Simulator/main/.lua"))()
+         elseif game.PlaceId == 8880590553 then -- Animal Evolution Simulator
+               loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Animal-Evolution-Simulator/main/.lua"))()
+         elseif game.PlaceId == 14841485778 then -- possessor
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Possessor/main/.lua"))()
+         elseif game.PlaceId == 15935482021 then -- Anime Infinity Simulator
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Anime-Infinity/main/.lua"))()
+         elseif game.PlaceId == 1240123653 then -- Zombie Attack
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Zombie-Attack/main/.lua"))()
+	elseif game.PlaceId == 14834754084 then -- Special Forces Simulator (PVP Mode)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Special-Forces-Simulator/main/.lua"))()
+        elseif game.PlaceId == 4972091010 then -- Zombie Uprising
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/TurtleHub/main/Zombie-Uprising/Script.lua"))()
+        elseif game.PlaceId == 12152063271 then -- fire ball punch
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/FireballPunchSimulator/main/.lua"))()
+        elseif game.PlaceId == 14168050172 then -- Gauntlet Simulator
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Gauntlet-Simulator/main/.lua"))()
+        elseif game.PlaceId == 15840422464 then -- StarRail Simulator
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/StarRail-Simulator/main/.lua"))()
+        elseif game.PlaceId == 15445888182 then -- Pet Adventures Simulator
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Pet-Adventure-Simulator/main/.lua"))()
+        elseif game.PlaceId == 16230991879 then -- Coding Simulator
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Soding-Simulator/main/.lua"))()
+        elseif game.PlaceId == 15917751894 then -- Prota Simulator
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Proto-Simulator/main/.lua"))()
+        elseif game.PlaceId == 13946745315 then -- Heads Up
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Heads-Up/main/.lua"))()
+        elseif game.PlaceId == 16510724413 then -- Pet Catchers
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Pet-Catchers/main/.lua"))()
+        else
+		local hin = Instance.new("Hint",game:GetService("Workspace"))
+		hin.Text = "Unsupported games"
+        end
+    end
+})
 wait(0.5)
 if user.Name ~= "Rivanda_Cheater" then
 	antispy()
