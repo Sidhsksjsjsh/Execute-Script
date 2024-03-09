@@ -78,7 +78,7 @@ end
 end
 
 ks:CreateUI({
-    Title = "Turtle Hub\nKey System",
+    Title = "Turtle Hub",
     KeyUrl = "Go find the key on turtle discord server",
     Key = {"TurtleOnTop","Alya","TurtleHub","BestScript"},
     Callback = function()
