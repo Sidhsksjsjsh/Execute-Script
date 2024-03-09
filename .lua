@@ -95,7 +95,7 @@ end
 KeySystemUI.New({
     ApplicationName = "TurtleHub",
     Name = "Turtle Hub",
-    Info = "Get Key For Turtle Hub",
+    Info = "Thx for using our script",
     DiscordInvite = "discord.gg/WhrxEa29P9",
     AuthType = "clientid" -- Can select verification with ClientId or IP ("clientid" or "ip")
 })
