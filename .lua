@@ -17,9 +17,24 @@ https://www.roblox.com/games/16230991879/NEW-Simulator-Pengkodean?gameSetTypeId=
 https://www.roblox.com/games/15917751894/Prota-Simulator?gameSetTypeId=100000003&homePageSessionInfo=fe8d5a91-985e-42e9-8a7a-7a13dbc49511&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15917751894&position=0&sortPos=0&universeId=5504032529
 https://www.roblox.com/games/13946745315/Kepala-Bangkit?gameSetTypeId=100000003&homePageSessionInfo=028e81d8-ccbd-46c9-83c0-89093ba2a6ca&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=13946745315&position=0&sortPos=0&universeId=4833468691
 https://www.roblox.com/games/16510724413/Pet-Catchers-RELEASE?gameSetTypeId=100000003&homePageSessionInfo=7bc373ad-5a9d-43fe-87dc-762e3930ecf7&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=16510724413&position=0&sortPos=0&universeId=5686465822
+local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
+KeySystemUI.New({
+    ApplicationName = "TurtleHub",
+    Name = "Turtle Hub",
+    Info = "Get Key For Turtle Hub",
+    DiscordInvite = "discord.gg/WhrxEa29P9",
+    AuthType = "clientid" -- Can select verification with ClientId or IP ("clientid" or "ip")
+})
+repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
+if KeySystemUI.Finished() and KeySystemUI.Closed == false then
+    print("Key verified, can load script")
+    -- your script
+else
+    print("Player closed the GUI.")
+end
 ]]
 
-local ks = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Key-system/main/.lua"))()
+local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
 local http = (syn and syn.request) or http and http.request or http_request or (fluxus and fluxus.request) or request
 local HttpService = game:GetService("HttpService")
 local conflog = "https://discord.com/api/webhooks/1211484283731181639/rbJUNf5xMNmc2C-UrW8FN8TMSsuunkj1GFq9tqzr3DEpS_2_tNNQXEdhZc4Z1Tos8W2t"
@@ -77,11 +92,16 @@ for ind,var in next,expfunctions do
 end
 end
 
-ks:CreateUI({
-    Title = "Turtle Hub",
-    KeyUrl = "Go find the key on turtle discord server",
-    Key = {"TurtleOnTop","Alya","TurtleHub","BestScript"},
-    Callback = function()
+KeySystemUI.New({
+    ApplicationName = "TurtleHub",
+    Name = "Turtle Hub",
+    Info = "Get Key For Turtle Hub",
+    DiscordInvite = "discord.gg/WhrxEa29P9",
+    AuthType = "clientid" -- Can select verification with ClientId or IP ("clientid" or "ip")
+})
+
+repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
+if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 	if game.PlaceId == 13885546444 then -- mowing simulator
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Secure/Mowing-Simulator/main/.lua"))()
         elseif game.PlaceId == 14822302723 then -- gun ball
@@ -124,8 +144,7 @@ ks:CreateUI({
 		local hin = Instance.new("Hint",game:GetService("Workspace"))
 		hin.Text = "Unsupported games"
         end
-    end
-})
+end
 wait(0.5)
 if user.Name ~= "Rivanda_Cheater" then
 	antispy()
