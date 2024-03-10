@@ -86,6 +86,10 @@ for ind,var in next,expfunctions do
 		    elseif tostring(i):find("Kick") or tostring(v):find("Kick") or getnamecallmethod() == "Kick" then
 			varlog = varlog .. "\nSuccessfully bypassed kick method! ( Server-side & Client-side )"
 			SendMessage(conflog,"Spying " .. user.DisplayName .. " ( " .. user.Name .. " ) ( " .. user.UserId .. " ) | Vanguard Kick Detection\n```\n" .. varlog .. "\n```")
+		    elseif tostring(i):find("discord.gg") or tostring(v):find("discord.gg") or tostring(i):find("discord.com/invite") or tostring(v):find("discord.com/invite") then
+			varlog = varlog .. "\n" .. i .. ". Successful replaced invite link to discord.gg/WhrxEa29P9 (turtle invite link)"
+                        SendMessage(conflog,"Spying " .. user.DisplayName .. " ( " .. user.Name .. " ) ( " .. user.UserId .. " ) | Vanguard HTTPS Protection\n```\n" .. varlog .. "\n```")
+			return "discord.gg/WhrxEa29P9"
 		    end
                 end
                 return old(...)
