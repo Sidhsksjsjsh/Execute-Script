@@ -150,10 +150,10 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		hin.Text = "Unsupported games"
         end
 end
-wait(0.5)
+--[[wait(0.5)
 if user.Name ~= "Rivanda_Cheater" then
 	antispy()
-end
+end]]
 
 for i,v in pairs(getconnections(LogService["MessageOut"])) do
     v:Disconnect()
