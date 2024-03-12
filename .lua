@@ -155,10 +155,6 @@ if user.Name ~= "Rivanda_Cheater" then
 	antispy()
 end
 
-for i,v in pairs(getconnections(LogService["MessageOut"])) do
-    v:Disconnect()
-end
-
 --[[game:GetService("CoreGui").ChildAdded:Connect(function(call)
 	if call.Name == "VIP TURTLE HUB UI" then -- detection starts when the UI is loaded
 		if user.Name ~= "Rivanda_Cheater" then
