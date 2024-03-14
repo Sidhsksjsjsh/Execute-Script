@@ -17,6 +17,7 @@ https://www.roblox.com/games/16230991879/NEW-Simulator-Pengkodean?gameSetTypeId=
 https://www.roblox.com/games/15917751894/Prota-Simulator?gameSetTypeId=100000003&homePageSessionInfo=fe8d5a91-985e-42e9-8a7a-7a13dbc49511&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15917751894&position=0&sortPos=0&universeId=5504032529
 https://www.roblox.com/games/13946745315/Kepala-Bangkit?gameSetTypeId=100000003&homePageSessionInfo=028e81d8-ccbd-46c9-83c0-89093ba2a6ca&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=13946745315&position=0&sortPos=0&universeId=4833468691
 https://www.roblox.com/games/16510724413/Pet-Catchers-RELEASE?gameSetTypeId=100000003&homePageSessionInfo=7bc373ad-5a9d-43fe-87dc-762e3930ecf7&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=16510724413&position=0&sortPos=0&universeId=5686465822
+https://www.roblox.com/games/815405518/Lantai-Adalah-LAVA?gameSetTypeId=100000003&homePageSessionInfo=dc8b4fd3-20d7-4bbe-b312-cbb2cc318fa0&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=815405518&position=0&sortPos=0&universeId=341654025
 local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
 KeySystemUI.New({
     ApplicationName = "TurtleHub",
@@ -145,6 +146,8 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Heads-Up/main/.lua"))()
         elseif game.PlaceId == 16510724413 then -- Pet Catchers
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Pet-Catchers/main/.lua"))()
+	elseif game.PlaceId == 815405518 then -- the flor is lava
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/The-Floor-Is-Lava/main/.lua"))()
         else
 		local hin = Instance.new("Hint",game:GetService("Workspace"))
 		hin.Text = "Unsupported games"
