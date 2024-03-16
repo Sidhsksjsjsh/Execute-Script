@@ -151,8 +151,10 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/The-Floor-Is-Lava/main/.lua"))()
 	elseif game.PlaceId == 13127800756 then -- Arm Wrestle Simulator
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Arm-Wrestle-Simulator/main/.lua"))()
+	elseif game.PlaceId == 893973440 or game.PlaceId == 1738581510 and user.Name == "Rivanda_Cheater" then -- Flee The Facility ( Under testing )
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Flee-The-Facility/main/.lua"))()
         else
-		local hin = Instance.new("Hint",game:GetService("Workspace"))
+		local hin = Instance.new("Hint",workspace)
 		hin.Text = "Unsupported games"
         end
 end
