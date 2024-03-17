@@ -158,9 +158,9 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Flee-The-Facility/main/.lua"))()
 	elseif game.PlaceId == 3101667897 or game.PlaceId == 3276265788 or game.PlaceId == 3232996272 then -- Legend Of Speed
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/LegendOfSpeed/main/.lua"))()
-	elseif game.PlaceId == 5977280685 and user.Name == "Rivanda_Cheater" then -- Ninja Legends 2
+	elseif game.PlaceId == 5977280685 then -- Ninja Legends 2
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Ninja-Legends-2/main/.lua"))()
-	elseif game.PlaceId == 3956818381 and user.Name == "Rivanda_Cheater" then
+	elseif game.PlaceId == 3956818381 then -- Ninja Legends
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Ninja-Legends/main/.lua"))()
         else
 		local hin = Instance.new("Hint",workspace)
