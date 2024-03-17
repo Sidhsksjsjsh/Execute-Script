@@ -20,6 +20,7 @@ https://www.roblox.com/games/16510724413/Pet-Catchers-RELEASE?gameSetTypeId=1000
 https://www.roblox.com/games/815405518/Lantai-Adalah-LAVA?gameSetTypeId=100000003&homePageSessionInfo=dc8b4fd3-20d7-4bbe-b312-cbb2cc318fa0&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=815405518&position=0&sortPos=0&universeId=341654025
 https://www.roblox.com/games/13127800756/Simulator-Gulat-Lengan?gameSetTypeId=100000003&homePageSessionInfo=d267d655-a90e-4365-b87c-346af950e4c5&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=13127800756&position=0&sortPos=0&universeId=4582358979
 https://www.roblox.com/games/3101667897/Legenda-Kecepatan?gameSetTypeId=100000003&homePageSessionInfo=080a303b-97d7-4d04-98f4-13f46089570a&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=3101667897&position=0&sortPos=0&universeId=1119466531
+https://www.roblox.com/games/5977280685/Ninja-Legends-2?gameSearchSessionInfo=40206eef-cde0-47f0-9012-788d27f25e67&isAd=false&nativeAdData=&numberOfLoadedTiles=40&page=searchPage&placeId=5977280685&position=1&universeId=2153721718
 local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
 KeySystemUI.New({
     ApplicationName = "TurtleHub",
@@ -156,6 +157,8 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Flee-The-Facility/main/.lua"))()
 	elseif game.PlaceId == 3101667897 or game.PlaceId == 3276265788 or game.PlaceId == 3232996272 then -- Legend Of Speed
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/LegendOfSpeed/main/.lua"))()
+	elseif game.PlaceId == 5977280685 and user.Name == "Rivanda_Cheater" then -- Ninja Legends 2
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Ninja-Legends-2/main/.lua"))()
         else
 		local hin = Instance.new("Hint",workspace)
 		hin.Text = "Unsupported games"
