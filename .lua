@@ -165,6 +165,8 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Ninja-Legends/main/.lua"))()
 	elseif game.PlaceId == 5712833750 then -- Animal Simulator
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Animal-Simulator/main/.lua"))()
+	elseif game.PlaceId == 16436007861 then -- Warrior Simulator 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Warrior-Simulator/main/.lua"))()
         else
 		local hin = Instance.new("Hint",workspace)
 		hin.Text = "Unsupported games"
