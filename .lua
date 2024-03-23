@@ -23,6 +23,7 @@ https://www.roblox.com/games/3101667897/Legenda-Kecepatan?gameSetTypeId=10000000
 https://www.roblox.com/games/5977280685/Ninja-Legends-2?gameSearchSessionInfo=40206eef-cde0-47f0-9012-788d27f25e67&isAd=false&nativeAdData=&numberOfLoadedTiles=40&page=searchPage&placeId=5977280685&position=1&universeId=2153721718
 https://www.roblox.com/games/3956818381/Ninja-Legends?gameSetTypeId=100000003&homePageSessionInfo=20e987e6-f2b3-4c38-9acb-ac3e9c497a15&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=3956818381&position=1&sortPos=0&universeId=1335695570
 https://www.roblox.com/games/5712833750/Simulator-Hewan?gameSetTypeId=100000003&homePageSessionInfo=7ad04265-964f-4f2c-99b8-411c4d2f7408&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=5712833750&position=0&sortPos=0&universeId=2023680558
+https://www.roblox.com/games/15313073197/MAP-BARU-Anime-Pertempuran-Simulator?gameSetTypeId=100000003&homePageSessionInfo=319a06bd-1fbd-4249-b75b-6843c581ffcd&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15313073197&position=0&sortPos=0&universeId=5281426065
 local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
 KeySystemUI.New({
     ApplicationName = "TurtleHub",
@@ -167,6 +168,8 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Animal-Simulator/main/.lua"))()
 	elseif game.PlaceId == 16436007861 then -- Warrior Simulator 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Warrior-Simulator/main/.lua"))()
+	elseif game.PlaceId == 15313073197 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Anime-Combats-Simulator/main/.lua"))()
         else
 		local hin = Instance.new("Hint",workspace)
 		hin.Text = "Unsupported games"
