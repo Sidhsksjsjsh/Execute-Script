@@ -171,7 +171,7 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Warrior-Simulator/main/.lua"))()
 	elseif game.PlaceId == 15313073197 then -- Anime Combats Simulator
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Anime-Combats-Simulator/main/.lua"))()
-	elseif game.PlaceId == 15859661915 and user.Name == "Rivanda_Cheater" then -- Arcade Punch Simulator
+	elseif game.PlaceId == 15859661915 then -- Arcade Punch Simulator
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Arcade-Punch-Simulator-/main/.lua"))()
         else
 		local hin = Instance.new("Hint",workspace)
