@@ -25,6 +25,7 @@ https://www.roblox.com/games/3956818381/Ninja-Legends?gameSetTypeId=100000003&ho
 https://www.roblox.com/games/5712833750/Simulator-Hewan?gameSetTypeId=100000003&homePageSessionInfo=7ad04265-964f-4f2c-99b8-411c4d2f7408&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=5712833750&position=0&sortPos=0&universeId=2023680558
 https://www.roblox.com/games/15313073197/MAP-BARU-Anime-Pertempuran-Simulator?gameSetTypeId=100000003&homePageSessionInfo=319a06bd-1fbd-4249-b75b-6843c581ffcd&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15313073197&position=0&sortPos=0&universeId=5281426065
 https://www.roblox.com/games/15859661915/Simulator-Pukulan-Arcade-PEMBARUAN?gameSetTypeId=100000003&homePageSessionInfo=02111c39-eb56-478a-9d7c-dd02348ba0c4&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=15859661915&position=0&sortPos=0&universeId=5484216641
+https://www.roblox.com/games/16037561679/Simulator-Sepakbola-Kepala-NEW?gameSetTypeId=100000003&homePageSessionInfo=c91e332c-e1b6-4acb-9e4a-eac6ff68812c&isAd=false&numberOfLoadedTiles=6&page=homePage&placeId=16037561679&position=0&sortPos=0&universeId=5543899125
 local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
 KeySystemUI.New({
     ApplicationName = "TurtleHub",
@@ -173,6 +174,8 @@ if KeySystemUI.Finished() and KeySystemUI.Closed == false then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Anime-Combats-Simulator/main/.lua"))()
 	elseif game.PlaceId == 15859661915 then -- Arcade Punch Simulator
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Arcade-Punch-Simulator-/main/.lua"))()
+	elseif game.PlaceId == 16037561679 then -- Head Soccer Simulator
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/Head-Soccer-Simulator/main/.lua"))()
         else
 		local hin = Instance.new("Hint",workspace)
 		hin.Text = "Unsupported games"
